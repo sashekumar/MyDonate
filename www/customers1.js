@@ -11,7 +11,7 @@
                 this.mcode;
                 this.password;
                 this.pay = function pay() {
-                    menu.setMainPage('customers.html', { closeMenu: true });
+                    menu.setMainPage('aboutus.html', { closeMenu: true });
                 };
             })
 
