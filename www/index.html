@@ -160,12 +160,12 @@
           About MyDonate
         </ons-list-item>
 
-        <ons-list-item class="menu-item" ng-click="menu.setMainPage('agents.html', {closeMenu: true})">
+        <ons-list-item class="menu-item" ng-click="menu.setMainPage('mydonateus.html', {closeMenu: true})">
           <ons-icon icon="fa-bookmark" fixed-width="true"></ons-icon>
           About MyDonates and Us
         </ons-list-item>
 
-        <ons-list-item class="menu-item" ng-click="menu.setMainPage('agentcustomers.html', {closeMenu: true})">
+        <ons-list-item class="menu-item" ng-click="menu.setMainPage('mydonations.html', {closeMenu: true})">
           <ons-icon icon="fa-bookmark" fixed-width="true"></ons-icon>
           My Donations
         </ons-list-item>
@@ -448,47 +448,120 @@
         </ons-page>
     </ons-template>
   
-  <ons-template id="agents.html">
-    <ons-page>
-      <ons-toolbar>
-        <div class="left">
-          <ons-toolbar-button ng-click="menu.toggle()">
-            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
-          </ons-toolbar-button>
-        </div>
-        <div class="center">Agents</div>
-      </ons-toolbar>
+    <ons-template id="mydonateus.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">About MyDonate and Us</div>
+            </ons-toolbar>
 
 
-      <ons-row style="margin-top: 100px; text-align: center;">
-        <ons-col>
-         Agents
-        </ons-col>
-      </ons-row>
+            <ons-row style="margin-top: 100px; text-align: center;">
+                <ons-col>
+                    We work with governments, civic leaders, celebrities, corporations, campus groups, 
+                    teachers and people just like you; anyone willing to help us advocate for the 
+                    survival and well-being of every child.
+                </ons-col>
+            </ons-row>
 
-    </ons-page>
-  </ons-template>
+        </ons-page>
+    </ons-template>
   
-  <ons-template id="agentcustomers.html">
-    <ons-page>
-      <ons-toolbar>
-        <div class="left">
-          <ons-toolbar-button ng-click="menu.toggle()">
-            <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
-          </ons-toolbar-button>
-        </div>
-        <div class="center">Agent's Customers</div>
-      </ons-toolbar>
+    <ons-template id="mydonations.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">My Donations</div>
+            </ons-toolbar>
 
 
-      <ons-row style="margin-top: 100px; text-align: center;">
-        <ons-col>
-         Agent's Customers
-        </ons-col>
-      </ons-row>
+            <ons-row style="margin-top: 5px; text-align: center;">
+                <ons-col>
+                    <ons-list class="timeline" modifier="inset" ng-app="app" ng-controller="CustomerController">
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">12-January-2013</span>
+                                        <span class="timeline-id">RM200</span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">12-February-2013</span>
+                                        <span class="timeline-id">RM250</span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">12-April-2013</span>
+                                        <span class="timeline-id">RM150</span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">12-May-2013</span>
+                                        <span class="timeline-id">RM50</span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">12-June-2013</span>
+                                        <span class="timeline-id">RM80</span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">12-August-2013</span>
+                                        <span class="timeline-id">RM250</span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">12-November-2013</span>
+                                        <span class="timeline-id">RM1000</span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                    </ons-list>
+                </ons-col>
+            </ons-row>
 
-    </ons-page>
-  </ons-template>
+        </ons-page>
+    </ons-template>
  
 </body>
 </html>
