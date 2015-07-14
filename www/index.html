@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
-  <title>AverMax Capital Mobile Client</title>  
+  <title>MyDonate</title>  
   
   <link rel="stylesheet" href="lib/onsen/css/onsenui.css">  
   <link rel="stylesheet" href="styles/onsen-css-components-blue-basic-theme.css">  
@@ -254,7 +254,7 @@
       <ons-row style="margin-top: 5px; text-align: center;">
         <ons-col>
             <ons-list class="timeline" modifier="inset" ng-app="app" ng-controller="CustomerController">
-                <ons-list-item class="timeline-li" modifier="tappable">
+                <ons-list-item class="timeline-li" modifier="tappable" ng-click="menu.setMainPage('listoforg.html', { closeMenu: true });">
                     <ons-row>
                         <ons-col>
                             <div class="timline-from">
@@ -330,6 +330,98 @@
 
     </ons-page>
   </ons-template>
+
+    <ons-template id="listoforg.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">List Of Organisations</div>
+            </ons-toolbar>
+
+
+            <ons-row style="margin-top: 5px; text-align: center;">
+                <ons-col>
+                    <ons-list class="timeline" modifier="inset" ng-app="app" ng-controller="CustomerController">
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">Faith Home</span>
+                                        <span class="timeline-id"></span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">Rumah Care</span>
+                                        <span class="timeline-id"></span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">Canossa  Welfare Centre</span>
+                                        <span class="timeline-id"></span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">Single Parents</span>
+                                        <span class="timeline-id"></span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">Rumah Kanak-kanak Impian</span>
+                                        <span class="timeline-id"></span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">Rumah Keluarga Kami</span>
+                                        <span class="timeline-id"></span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                        <ons-list-item class="timeline-li" modifier="tappable">
+                            <ons-row>
+                                <ons-col>
+                                    <div class="timline-from">
+                                        <span class="timeline-name">Assunta Children's Society</span>
+                                        <span class="timeline-id"></span>
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-list-item>
+                    </ons-list>
+                </ons-col>
+            </ons-row>
+
+        </ons-page>
+    </ons-template>
   
   <ons-template id="agents.html">
     <ons-page>
