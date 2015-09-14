@@ -571,11 +571,10 @@
 
         <ons-list style="border-top: none"><ons-list-item style="line-height: 1; padding: 0;">
           <ons-row class="action">
-            <ons-col class="action-col">
+            <ons-col class="action-col" modifier="tappable" ng-click="menu.setMainPage('donatenow.html', { closeMenu: true });">
               <div class="action-icon"><ons-icon icon="ion-compose"></ons-icon></div>
               <div class="action-label">Donate Now</div>
             </ons-col>
-
           </ons-row>
         </ons-list-item></ons-list>
 
@@ -603,6 +602,104 @@
         </ons-list>
             
         </ons-page>
+    </ons-template>
+    
+    <ons-template id="donatenow.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">DONATION AMOUNT</div>
+            </ons-toolbar>
+            
+             <ons-list>
+
+        <ons-list-item modifier="tappable">
+          <label class="radio-button radio-button--list-item">
+            <input type="radio" name="duration" checked="checked">
+            <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+            One Time
+          </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="radio-button radio-button--list-item">
+            <input type="radio" name="duration">
+            <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+            Monthly
+          </label>
+        </ons-list-item>
+        
+        <ons-list-header>Browsers</ons-list-header>
+
+        <ons-list-item modifier="tappable">
+          <label class="radio-button radio-button--list-item">
+            <input type="radio" name="a" checked="checked">
+            <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+            20 RM
+          </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="radio-button radio-button--list-item">
+            <input type="radio" name="a">
+            <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+            30 RM
+          </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="radio-button radio-button--list-item">
+            <input type="radio" name="a">
+            <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+            50 RM
+          </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="radio-button radio-button--list-item">
+            <input type="radio" name="a">
+            <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+            100 RM
+          </label>
+        </ons-list-item>
+
+        <ons-list-item modifier="tappable">
+          <label class="radio-button radio-button--list-item">
+            <input type="radio" name="a">
+            <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+            200 RM
+          </label>
+        </ons-list-item>
+                 
+        <ons-list-item modifier="tappable">
+          <label class="radio-button radio-button--list-item">
+            <input type="radio" name="a">
+            <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+            300 RM
+          </label>
+        </ons-list-item>
+                 
+        <ons-list-item modifier="tappable">
+          <label class="radio-button radio-button--list-item">
+            <input type="radio" name="a">
+            <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+            500 RM
+          </label>
+        </ons-list-item>
+                 
+        <ons-list-item modifier="tappable">
+          <label class="radio-button radio-button--list-item">
+            <input type="radio" name="a">
+            <div class="radio-button__checkmark radio-button--list-item__checkmark"></div>
+            Others <input type="text" class="text-input text-input--transparent" placeholder="Amount" style="width: 100%">
+          </label>
+        </ons-list-item>
+      </ons-list>
+         </ons-page>
     </ons-template>
   
     <ons-template id="mydonateus.html">
