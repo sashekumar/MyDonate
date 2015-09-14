@@ -614,7 +614,7 @@
                 </div>
                 <div class="center">DONATION AMOUNT</div>
             </ons-toolbar>
-            
+             
              <ons-list>
 
         <ons-list-item modifier="tappable">
@@ -633,7 +633,7 @@
           </label>
         </ons-list-item>
         
-        <ons-list-header>Browsers</ons-list-header>
+        <ons-list-header>Amount</ons-list-header>
 
         <ons-list-item modifier="tappable">
           <label class="radio-button radio-button--list-item">
@@ -699,9 +699,37 @@
           </label>
         </ons-list-item>
       </ons-list>
+            <br />
             
-            <ons-button modifier="large" class="login-button">Donate Now By Debit or Credit Card</ons-button>
+            <div ng-app="app" ng-controller="DonateController as mydonate">
+            <ons-button  modifier="large" class="login-button" ng-click="mydonate.pay()" style="width:90%">Donate Now By Debit or Credit Card</ons-button>
+            </div>
+            
          </ons-page>
+    </ons-template>
+    
+    <ons-template id="donateFinal.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">Donation Amount</div>
+            </ons-toolbar>
+            
+            <div class="login-form" ng-app="app" ng-controller="LoginController as login">
+                <h1>Monthly Donation Amount: RM 20</h1>
+                <input type="text" class="text-input--underbar" ng-model="login.mcode" placeholder="First Name" value="">
+                <input type="text" class="text-input--underbar" ng-model="login.password" placeholder="Last Name" value="">
+                 <input type="text" class="text-input--underbar" ng-model="login.password" placeholder="Email Address" value="">
+                <br><br>
+                <ons-button modifier="large" class="login-button" ng-click="login.pay()">Continue</ons-button>
+                <br><br>
+                <!--<ons-button modifier="quiet" class="forgot-password">Forgot password?</ons-button>-->
+            </div>
+        </ons-page>
     </ons-template>
   
     <ons-template id="mydonateus.html">

@@ -1,4 +1,4 @@
-﻿angular.module('app', ['onsen'])
+angular.module('app', ['onsen'])
 
             .controller('CustomerController', function ($scope, $http) {
                
@@ -12,6 +12,12 @@
                 this.password;
                 this.pay = function pay() {
                     menu.setMainPage('aboutus.html', { closeMenu: true });
+                };
+            })
+
+        .controller('DonateController', function ($scope, $http) {
+                this.pay = function pay() {
+                    menu.setMainPage('donateFinal.html', { closeMenu: true });
                 };
             })
 
